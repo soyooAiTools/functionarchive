@@ -42,19 +42,23 @@
 ```
 functionarchive/
 ├── electron/
-│   ├── main.js              # Electron 主进程
-│   ├── preload.js           # 预加载脚本
-│   └── src/
-│       ├── App.jsx          # 根组件 (ProLayout + 路由)
-│       ├── pages/
-│       │   ├── TaskCreate.jsx   # 创建功能实现任务
-│       │   ├── TaskList.jsx     # 任务列表
-│       │   └── TaskDetail.jsx   # 任务详情
-│       └── api/
-│           └── client.js        # 后端 API 调用
-├── package.json
-├── vite.config.js
-└── .gitignore
+│   ├── src/
+│   │   ├── main.js              # Electron 主进程
+│   │   ├── preload.js           # 预加载脚本
+│   │   └── renderer/
+│   │       ├── index.html       # HTML 入口
+│   │       ├── App.jsx          # 根组件 (ProLayout + 路由)
+│   │       ├── pages/
+│   │       │   ├── FunctionCreate.jsx  # 创建功能实现任务
+│   │       │   ├── FunctionDetail.jsx  # 功能实现详情
+│   │       │   ├── TaskList.jsx        # 任务列表
+│   │       │   └── Login.jsx           # 登录页
+│   │       └── api/
+│   │           └── client.js           # 后端 API 调用
+│   ├── package.json
+│   └── vite.config.js
+├── .gitignore
+└── README.md
 ```
 
 ## 🚀 快速启动
